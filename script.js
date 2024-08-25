@@ -69,6 +69,9 @@ const API_KEY = "d1845658f92b31c64bd94f06f7188c9c";
 let currentTab = userTab;
 currentTab.classList.add("current-tab");
 
+
+//step 2
+
 function switchTab(clickedTab){
     if(clickedTab !== currentTab){
         currentTab.classList.remove("current-tab");
@@ -89,18 +92,37 @@ function switchTab(clickedTab){
             getFromSessionStorage();
         }
 
-
     }
 }
 
+// step 1 : 
 
 userTab.addEventListener('click', ()=>{
     switchTab(userTab);
 });
-
 searchTab.addEventListener("click", () => {
     switchTab(searchTab);
 });
+
+
+// step 3
+
+// Check if coordinates are already present in Session Storage
+function getFromSessionStorage() {
+    const localCoordinates = sessionStorage.getItem("user-coordinates");
+    if (!localCoordinates) {
+        // agar coordinate nhi mile 
+      grantAccessContainer.classList.add("active");
+    } else {
+     // agar local coordinate pade huye hai to use kro 
+      const coordinates = JSON.parse(localCoordinates);
+
+      // dundho ab 
+      fetchUserWeatherInfo(coordinates);
+    }
+  }
+
+
 
 
 
