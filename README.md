@@ -9,7 +9,6 @@ This project is a web application that provides real-time weather information fo
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-- [Contact](#contact)
 
 ## Description
 WeatherSense offers accurate and up-to-date weather information, including temperature, wind speed, humidity, and cloud cover. It features location-based weather updates and a city search option, all displayed in a visually appealing and easy-to-navigate interface. The application leverages the Geolocation API and the OpenWeatherMap API to deliver precise weather data.
