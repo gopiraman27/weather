@@ -21,10 +21,10 @@ WeatherSense offers accurate and up-to-date weather information, including tempe
 - **User-friendly Interface**: Presents weather data in a clean and accessible format.
 
 ## Usage
+Visit the WeatherSense website at [https://gopiraman27.github.io/weather/](https://gopiraman27.github.io/weather/).<br>
 Open the `index.html` file in a web browser to explore the WeatherSense application.<br>
 Grant permission for location access to receive weather updates specific to your area.<br>
 You can also enter a city name in the search bar to view weather information for that location.
-
 ## Contributing
 Contributions are welcome! If you'd like to contribute to the project, fork the repository and submit a pull request with your changes.
 
